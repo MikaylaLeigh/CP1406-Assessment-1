@@ -1,8 +1,64 @@
-@font-face {
-    font-family: "ld-volleyball";
-    src: url('ld-volleyball.ttf');
+/* Planning Page */
+.planbox {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #EEE;
+    border: 4px dashed #FFF;
+    margin-top: 50px;
+    font-family: Arial;
+    min-width: 570px;
+    border-radius: 30px;
+    padding-bottom: 20px;
+    box-shadow: 10px 15px 2px #c6c6c6;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+.planbox h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #CCC;
+    letter-spacing: 2px;
+}
+
+.planbox tr {
+    line-height: 25px;
+}
+
+.planbox p {
+    color: #AAA;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.planbox a {
+    color: #FAC;
+    text-decoration: none;
+}
+
+.left  {
+    color: #FAC;
+    border-right: 3px solid #FFF;
+    display: block;
+    min-width: 200px;
+    width: 20%;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.right {
+    width: 100%;
+    min-width: 350px;
+    color: #AAA;
+    font-weight: normal;
+    text-align: justify;
+}
+
+/* Main Website */
 ::-webkit-scrollbar-thumb { 
     background-color: white;
     height:auto;
@@ -10,7 +66,7 @@
 }
 
 ::-webkit-scrollbar { 
-    height:5px;
+    height:12px;
     width:12px; 
     background-color: transparent;
     border: 8px solid transparent;
@@ -20,25 +76,24 @@ html {
     background: #FFF;
     width: 102%;
     margin-left: -7px;
-    font-family: Calibri;
+    font-family: Arial;
+}
+
+body {
+    min-width: 600px;
 }
 
 .header {
-    background: #f6ebd9;
+    background: #eadfb9;
     padding-top: 20px;
     margin-top: -10px;
-    background-image: url(texture-1878273_960_720.jpg);
     position: relative;
     z-index: 1;
 }
 
 .header h1 {
-    color: #FFF;
-    font-family: "ld-volleyball";
     text-align: center;
-    font-size: 60px;
-    letter-spacing: 10px;
-    text-shadow: 2px 2px 8px #9c8764;
+    padding-bottom: 10px;
 }
 
 nav {
@@ -55,12 +110,21 @@ nav li {
     margin-left: 30px;
     margin-right: 30px;
     letter-spacing: 3px;
-    color: #888;
-    text-shadow: 2px 2px 5px #fff;
+    color: #FFF;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: crimson;
+    font-weight: bold;
 }
 
 .headerfooter {
-    background-image: url(sandedge.png);
+    background-image: url(sand.png);
     height: 115px;
     background-repeat: repeat-x;
     position: relative;
@@ -103,4 +167,175 @@ nav li {
     top: 300px;
     left: 140px;
     right: 140px;
+    min-width: 300px;
+}
+
+/* Sign-up Box */
+.signupbox {
+    background: transparent;
+    border: 5px solid #FFF;
+    float: right;
+    z-index: 1;
+    position: relative;
+    margin-right: 15%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 6px;
+    font-family: Arial Black;
+    color: #FFF;
+    width: 250px;
+}
+
+::-webkit-input-placeholder {
+    color: #CCC;
+}
+
+.signupshortl input {
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    width: 110px;
+    float: left;
+    color: #888;
+}
+
+.signupshortr input {
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    width: 110px;
+    float: right;
+    color: #888;
+}
+
+.signuplong input {
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 2px solid #fff;
+    width: 240px;
+    margin-top: 8px;
+    color: #888;
+}
+
+.signupbox p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    line-height: 15px;
+}
+
+.signupbox th {
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 20px;
+    color: #b1ebf3;
+    line-height: 15px;
+}
+
+.terms {
+    float: left;
+    background: #FFF;
+    }
+
+.guidelines {
+    display: inline;
+    letter-spacing: 0px;
+    font-family: Arial;
+    float: right;
+    width: 220px;
+}
+
+.guidelines a {
+    color: #b1ebf3;
+    text-decoration: none;
+}
+
+.guidelines a:hover {
+    color: #FFF;
+}
+
+.signupbox button {
+    background: #FFF;
+    border: 2px solid #FFF;
+    font-size: 20px;
+    color: #57d2e2;
+    font-family: Arial Black;
+    border-radius: 15px;
+    
+}
+
+.signupbox button a {
+    color: crimson;
+    text-decoration: none;
+    display: block;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 5px;
+    margin-right: -25px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #57d2e2;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:hover {
+    background-color: #b1ebf3;
+}
+
+input:checked + .slider {
+    background-color: #FFF;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }

@@ -6,15 +6,52 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="header"><h1>Beach&nbsp;Volleyball</h1>
+    <div class="header"><h1><a href="index.html"><img src="header.png"></a></h1>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>About Volleyball</li>
-            <li>Who Can Play</li>
-            <li>Contact / Links</li></ul></nav></div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about">About Volleyball</a></li>
+            <li><a href="">Leaderboard</a></li>
+            <li><a href="">Contact / Links</a></li></ul></nav></div>
         <div class="headerfooter">&nbsp;</div>
     
-    <div class="waveleft">&nbsp;</div><div class="content">Text</div><div class="waveright">&nbsp;</div>
+    <div class="waveleft">&nbsp;</div><div class="content">Text</div>
+    
+    <div class="signupbox">Sign-Up
+        <div class="signupshortl"><input type="text" placeholder="First Name" required></div>
+        <div class="signupshortr"><input type="text" placeholder="Last Name" required></div>
+        <div class="signuplong"><input type="text" placeholder="Phone" required></div>
+        <div class="signuplong"><input type="text" placeholder="Email" required></div>
+        <p><br>Competition Day</p>
+        <table>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>&nbsp;Fri&nbsp;</th>
+                <th>Sat</th>
+            </tr>
+            <tr>
+                <th><input type="checkbox" value="Monday"></th>
+                <th><input type="checkbox" value="Tuesday"></th>
+                <th><input type="checkbox" value="Wednesday"></th>
+                <th><input type="checkbox" value="Thursday"></th>
+                <th><input type="checkbox" value="Friday"></th>
+                <th><input type="checkbox" value="Saturday"></th>
+            </tr></table>
+        <p>Competition Time</p>
+    <label class="switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+    </label>
+        <p style="float: left; line-height: 34px; letter-spacing: 0px; width: 50px; padding-right: 20px; color: #b1ebf3;">Afternoon</p>
+        <p style="float: right; line-height: 34px; letter-spacing: 0px; color: #b1ebf3;">Evening &nbsp; &nbsp;</p>
+        <br><input type="checkbox" value="Terms" class="terms">
+        <p class="guidelines">I have read and accept the <a href="guidelines.html">Playing Guidelines</a>.</p>
+        <button type="button"><a href="signupsuccess.html">Sign Me Up!</a></button>
+    </div>
+    
+    <div class="waveright">&nbsp;</div>
     </body>
 </html>
