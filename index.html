@@ -6,18 +6,24 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="header"><h1><a href="index.html"><img src="header.png"></a></h1>
+    <div class="background">&nbsp;</div>
+    <div class="header"><h1><a href="index.html"><img src="header.png" width="100%" style="max-width: 953px;"></a></h1>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about">About Volleyball</a></li>
-            <li><a href="">Leaderboard</a></li>
-            <li><a href="">Contact / Links</a></li></ul></nav></div>
+            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">About Volleyball</a>
+                <div class="dropdown-content">
+                    <a href="about.html">About Volleyball</a>
+                    <a href="guidelines.html">Playing Guidelines</a>
+                    <a href="whocanplay.html">Who Can Play</a>
+                    </div></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="contact.html">Contact / Links</a></li></ul></nav></div>
         <div class="headerfooter">&nbsp;</div>
     
-    <div class="waveleft">&nbsp;</div><div class="content">Text</div>
-    
-    <div class="signupbox">Sign-Up
+    <div class="waveleft">&nbsp;</div>
+    <div class="content">
+        <div class="right"><div class="signupbox">Sign-Up
         <div class="signupshortl"><input type="text" placeholder="First Name" required></div>
         <div class="signupshortr"><input type="text" placeholder="Last Name" required></div>
         <div class="signuplong"><input type="text" placeholder="Phone" required></div>
@@ -48,10 +54,32 @@
         <p style="float: left; line-height: 34px; letter-spacing: 0px; width: 50px; padding-right: 20px; color: #b1ebf3;">Afternoon</p>
         <p style="float: right; line-height: 34px; letter-spacing: 0px; color: #b1ebf3;">Evening &nbsp; &nbsp;</p>
         <br><input type="checkbox" value="Terms" class="terms">
-        <p class="guidelines">I have read and accept the <a href="guidelines.html">Playing Guidelines</a>.</p>
+        <p class="guidelines">I have read and accept the <a href="guidelines.html" target="_blank">Playing Guidelines</a>.</p>
         <button type="button"><a href="signupsuccess.html">Sign Me Up!</a></button>
+    </div></div>
+        
+        <div class="left">
+            <h2>Announcements</h2>
+            <div class="announce">
+            <h3>4 Drinks for 3!</h3>
+    During August only, you can purchase 4 drinks for the price of 3 at the bar.
+            <div class="date">15 July 2016</div>
+            </div>
+        <div class="announce"><h3>Registration Discount</h3>
+    New teams get a 20% discount on registration for the next season.
+            <div class="date">10 July 2016</div>
+            </div>
+        <div class="announce"><h3>Slammers Tournament</h3>
+    Slammers Tournament: Get your nominations in now for the next 4-a-side weekend competition.
+            <div class="date">29 June 2016</div>
+            </div>
+        <div class="announce"><h3>New Season</h3>
+    New season starts August 21st.
+            <div class="date">20 June 2016</div>
+            </div></div>
     </div>
     
     <div class="waveright">&nbsp;</div>
+    <footer>© Slammers Beach Volleyball Cairnsville 2017</footer>
     </body>
 </html>
